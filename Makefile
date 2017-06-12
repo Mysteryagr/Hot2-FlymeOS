@@ -7,7 +7,7 @@
 # The default value is base.
 # Support values: base, base_cm, base_mt6592 and other devices in the future.
 #-----------------------------------------------------------------------------
-#BASE := base_cm
+BASE := base
 
 ##############################################################################
 # The value is used for resource adapter with the aapt tool.
@@ -127,8 +127,8 @@ vendor_modify_jars := framework org.slim.framework services telephony-common wif
 # The property decide whether hide the soft mainkeys.
 # If 1, hide the soft mainkeys. If 0, display the soft mainkeys.
 # You should configure the property according to your device.
-#override_property += \
-#    qemu.hw.mainkeys=0
+override_property += \
+    qemu.hw.mainkeys=0
 
 
 # The value of the property ro.flyme.romer will be contained in the ota package name.
@@ -139,7 +139,7 @@ vendor_modify_jars := framework org.slim.framework services telephony-common wif
 # You should configure the property according to your device and your ID with replace the "Nexus-6P_Unofficial".
 override_property += \
     ro.flyme.romer=Unofficial \
-    ro.product.model_romer=Nexus-6P_Unofficial
+    ro.product.model_romer=x510
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.
@@ -155,7 +155,7 @@ override_property += \
 # Set it to be false when you want to escape the verification.
 # Default: true
 #-----------------------------------------------------------------------------
-#USE_ASSERTIONS_IN_UPDATER_SCRIPT := false
+USE_ASSERTIONS_IN_UPDATER_SCRIPT := false
 
 ##############################################################################
 # Defines whether reduces useless resources, only keep the resources of preferred configuration, like current density or locale.
@@ -175,13 +175,13 @@ override_property += \
 # Will fall back to a file-based OTA if the target_files is older and doesn't support block-based OTAs.
 # Default: true
 #-----------------------------------------------------------------------------
-#PRODUCE_BLOCK_BASED_OTA := false
+PRODUCE_BLOCK_BASED_OTA := false
 
 ##############################################################################
 # Defines whether build an international version of package.
 # Default: false
 #-----------------------------------------------------------------------------
-#PRODUCE_INTERNATIONAL_ROM := true
+PRODUCE_INTERNATIONAL_ROM := true
 
 ##############################################################################
 # Defines whether use sepolicy inject.
