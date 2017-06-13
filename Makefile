@@ -54,7 +54,7 @@ vendor_modify_images := boot
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/priv-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothMidiService HTMLViewer KeyChain PicoTts PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FMRadio FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell
+vendor_saved_apps := SlimSettingsProvider TeleService Bluetooth BluetoothMidiService HTMLViewer KeyChain PicoTts PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FMRadio FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -140,6 +140,10 @@ override_property += \
 override_property += \
     ro.flyme.romer=Unofficial \
     ro.product.model_romer=x510
+    config.disable_atlas=true \
+    persist.adb.notify=0 \
+    dalvik.vm.heapgrowthlimit=192m \
+    dalvik.vm.heapsize=512m
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.
