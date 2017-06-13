@@ -2175,10 +2175,6 @@
     <public type="id" name="decrement" id="0x0102038a" />
     <public type="id" name="overlay_display_window_texture" id="0x0102038b" />
     <public type="id" name="overlay_display_window_title" id="0x0102038c" />
-    <public type="id" name="permission_text" id="0x0102038d" />
-    <public type="id" name="permission_remember_layout" id="0x0102038e" />
-    <public type="id" name="permission_remember_choice_checkbox" id="0x0102038f" />
-    <public type="id" name="permission_remember_choice_text" id="0x01020390" />
     <public type="id" name="package_icon" id="0x0102038d" />
     <public type="id" name="package_label" id="0x0102038e" />
     <public type="id" name="off" id="0x0102038f" />
