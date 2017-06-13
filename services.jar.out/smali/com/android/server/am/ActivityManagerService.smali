@@ -91119,7 +91119,7 @@
 
     iget v4, v3, Lcom/android/server/am/ProcessRecord;->pid:I
 
-    invoke-static {v2, v4}, Lcom/android/server/am/ActivityManagerService;->killProcessGroup(II)V
+    invoke-static {v2, v4}, Lcom/android/server/am/ActivityManagerService;->killFlymeProcessGroup(II)V
 
     .line 3295
     const/4 v2, 0x1
