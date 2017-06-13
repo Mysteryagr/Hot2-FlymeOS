@@ -2810,15 +2810,10 @@
     invoke-virtual {v4, v5}, Lcom/android/server/SystemServiceManager;->startService(Ljava/lang/Class;)Lcom/android/server/SystemService;
 
     :cond_1c
-	goto/16 :goto_flyme_0
+    goto/16 :goto_flyme_0
 	
     if-nez v54, :cond_1d
-	:try_start_35
-    const-string v4, "SystemServer"
-
-    const-string v5, "Assets Atlas Service"
-
-    invoke-static {v4, v5}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I	
+	
     if-eqz v49, :cond_30
 
     .end local v33    # "atlas":Lcom/android/server/AssetAtlasService;
