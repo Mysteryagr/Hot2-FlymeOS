@@ -19893,7 +19893,7 @@
     :cond_27
     and-int/lit8 v3, v18, 0x1
 
-    if-nez v3, :cond_flyme_12
+    if-nez v3, :cond_flyme_0
 
     move-object/from16 v0, p0
 
